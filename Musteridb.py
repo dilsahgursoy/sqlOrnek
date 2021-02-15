@@ -8,11 +8,11 @@ class Musteri():
         return self.db.select(sart="Firstname='Ahmet'")
 
     def musteriEkle(self):
-        return self.db.insert(degerler=["'Alper'","'Aslan'","'alper@gmail.com'"])
+        return self.db.insert(degerler=["'Zeynep'","'Aslan'","'zeynep@gmail.com'"])
         #return self.db.insert()
 
     def musteriGuncelle(self,cid):
-        return self.db.update(degerler=["'OGUZHAN'","'Kaplan'","'oguzhan@gmail.com___'"],sart=f" CustomerId = {cid}")
+        return self.db.update(degerler=["'Hüseyin'","'Kaplan'","'huseyin@gmail.com'"],sart=f" CustomerId = {cid}")
 
     def musteriSil(self,sart=""):
         return self.db.delete(sart=sart)
